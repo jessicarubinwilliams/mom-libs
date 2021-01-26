@@ -54,7 +54,11 @@ $(document).ready(function() {
     // const adjective17Input = $("input#adjective17").val();
 
     let momlibArray = ["time1", "furniture1", "exclamation", "negativeExclamation", "beverage1", "pluralNoun1", "room1", "adjective1", "adjective2", "adjective3", "food1", "emotionAdjective1", "adjective4", "website", "adjective5", "amountOfTime", "place", "clothing1", "clothing2", "bodyPart1", "bodyPart2", "adjective6", "time2", "adjective7", "adjective8", "adjective9", "adverb1", "adjective10", "adjective11", "adjective12", "adjective13", "adjective14", "emotionNoun", "noun1", "noun2", "pastVerb", "pluralNoun2", "beverage2", "tv", "number", "sound", "adjective15", "verb1", "timeUnit", "erAdjective", "adverb2", "furniture2", "pluralNoun3", "adjective16", "pluralNoun4", "negativeAdjective", "adjective17"]
-    
+
+    momlibArray.forEach(function(word) {
+      let input = $("input#" + word).val();
+    });
+
     $(".time1").text(time1Input);
     $(".furniture1").text(furniture1Input);
     $(".exclamation").text(exclamationInput);
